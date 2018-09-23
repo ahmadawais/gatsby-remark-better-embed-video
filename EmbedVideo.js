@@ -30,7 +30,8 @@ var EmbedVideo = /** @class */ (function () {
             width: 560,
             ratio: 1.77,
             related: false,
-            noIframeBorder: true
+            noIframeBorder: false,
+            showInfo: true
         };
         this.options = __assign({}, defaultOptions, options);
         if (!this.options.height) {
@@ -127,19 +128,20 @@ var EmbedVideo = /** @class */ (function () {
             throw new TypeError('Unknown Video Service');
         }
         if (service === VideoServices.YOUTUBE) {
-            if (this.id.startsWith("http")) {
+            if (this.id.startsWith('http')) {
                 var originalParams = new url_1.URL(this.id);
                 originalParams.searchParams.forEach(function (val, index) {
-                    if (index === "v") {
-                        //Skip original video Parameter
+                    if (index === 'v') {
+                        // Skip original video Parameter
                     }
                     else {
-                        if (index === "t") {
+                        if (index === 't') {
                             var times = val.match(/(\d+)/g);
                             if (times) {
-                                var seconds = times.reverse()
-                                    .reduce(function (total, val, index) { return total + (parseInt(val) * Math.pow(60, index)); }, 0);
-                                url.searchParams.set("start", seconds.toString());
+                                var seconds = times
+                                    .reverse()
+                                    .reduce(function (total, val, index) { return total + parseInt(val) * Math.pow(60, index); }, 0);
+                                url.searchParams.set('start', seconds.toString());
                             }
                         }
                         else {
@@ -149,13 +151,16 @@ var EmbedVideo = /** @class */ (function () {
                 });
             }
             if (!this.options.related) {
-                url.searchParams.set("rel", "0");
+                url.searchParams.set('rel', '0');
+            }
+            if (!this.options.showInfo) {
+                url.searchParams.set('amp;showinfo', '0');
             }
         }
         return url.toString();
     };
     EmbedVideo.prototype.createIframe = function (videoPlatform, url) {
-        var iframeNode = "<iframe \n              width=\"" + this.options.width + "\" \n              height=\"" + this.options.height + "\" \n              src=\"" + url + "\"\n              class=\"embedVideoIframe\" \n              allowfullscreen\n            ></iframe>";
+        var iframeNode = "<iframe\n              width=\"" + this.options.width + "\"\n              height=\"" + this.options.height + "\"\n              src=\"" + url + "\"\n              class=\"embedVideoIframe\"\n              allowfullscreen\n            ></iframe>";
         if (this.options.noIframeBorder) {
             iframeNode += "\n      <style>\n        .embedVideoIframe {\n          border: 0\n        }\n      </style>";
         }

@@ -4,6 +4,7 @@ interface EmbedVideoOptions {
   related?: boolean;
   height?: number;
   noIframeBorder?: boolean;
+  showInfo?: boolean;
 }
 
 interface VideoId {
