@@ -10,6 +10,14 @@ All notable changes in this project are documented in this file.
 
 <br>
 
+### RELEASE: [2.2.0](https://github.com/ahmadawais/gatsby-remark-better-embed-video/compare/2.1.0...2.2.0)
+
+<br>
+
+![hr](https://on.ahmda.ws/t6N5/c)
+
+<br>
+
 ### RELEASE: 2.1.0
 
 ![NEW](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
