@@ -1,6 +1,6 @@
 {
 	"name": "gatsby-remark-better-embed-video",
-	"version": "2.3.0",
+	"version": "2.4.0",
 	"description": "Embed Videos (Youtube, Vimeo, VideoPress) in Gatsby via Markdown with better options",
 	"main": "index.js",
 	"author": "Ahmad Awais <https://twitter.com/MrAhmadAwais/>",
