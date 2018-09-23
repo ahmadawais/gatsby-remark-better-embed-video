@@ -10,11 +10,24 @@ All notable changes in this project are documented in this file.
 
 <br>
 
-### RELEASE: 1.0.0
+### RELEASE: 2.1.0
 
 ![NEW](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
 
+> 📦  Add showInfo option [`5c65418`](https://github.com/ahmadawais/gatsby-remark-better-embed-video/commit/5c6541809352969951cbd44a6c8448a2928ff7d8) <br>
+> 📦 Release It [`6b4ed50`](https://github.com/ahmadawais/gatsby-remark-better-embed-video/commit/6b4ed50e16f6766538632380372416038c7416bf) <br>
 > 📦 First Commit [`755b044`](https://github.com/ahmadawais/gatsby-remark-better-embed-video/commit/755b044a823e6a8cf6c26ca2fde57f4806cb9b41) <br>
+
+![FIX](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
+
+> 🐛 Names [`6bf51a8`](https://github.com/ahmadawais/gatsby-remark-better-embed-video/commit/6bf51a8d7eb3756deef5e442d5c4ed460808d6ac) <br>
+
+![DOCS](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Show Info [`fa58add`](https://github.com/ahmadawais/gatsby-remark-better-embed-video/commit/fa58adddee2cb3bdd6126875e93125fecdf4d160) <br>
+> 📖 header OSS [`84f6574`](https://github.com/ahmadawais/gatsby-remark-better-embed-video/commit/84f6574f5f9a60d007bb6ceddd5156bb882607d1) <br>
+> 📖 Improve docs lint [`ce0d13b`](https://github.com/ahmadawais/gatsby-remark-better-embed-video/commit/ce0d13b446ba7cc16864fa7fceca4c7bcdcab45a) <br>
+>  📖 Update the changelog [`5a47feb`](https://github.com/ahmadawais/gatsby-remark-better-embed-video/commit/5a47febab3f327bb0f2359271fd7d59b587d331e) <br>
 
 <br>
 
