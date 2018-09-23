@@ -153,6 +153,7 @@ var EmbedVideo = /** @class */ (function () {
             if (!this.options.related) {
                 url.searchParams.set('rel', '0');
             }
+            // If showInfo is false the make the video title etc go away.
             if (!this.options.showInfo) {
                 url.searchParams.set('amp;showinfo', '0');
             }
