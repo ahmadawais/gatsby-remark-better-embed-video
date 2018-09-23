@@ -64,7 +64,7 @@ yarn add gatsby-remark-better-embed-video
               height: 400, // Optional: Overrides optional.ratio.
               related: false, // Optional: Will remove related videos from the end of an embedded YouTube video.
               noIframeBorder: true, // Optional: Disable insertion of <style> border: 0.
-              showInfo: false // Optional: Disables the Youtube player title and info to make a clean look.
+              showInfo: false // Optional: Hides video title and player actions.
             }
           }
           ]
