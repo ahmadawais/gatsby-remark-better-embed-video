@@ -2,21 +2,41 @@
 
 All notable changes in this project are documented in this file.
 
-[![Ahmad on Twitter](https://img.shields.io/twitter/follow/mrahmadawais.svg?style=social&label=Follow%20@MrAhmadAwais)](https://twitter.com/mrahmadawais/)
+ [![Ahmad on Twitter](https://img.shields.io/twitter/follow/mrahmadawais.svg?style=social&label=Follow%20@MrAhmadAwais)](https://twitter.com/mrahmadawais/)
 
 <br>
 
-![hr](https://on.ahmda.ws/t6N5/c)
+{{#each releases}}
 
-<br>
+  ![hr](https://on.ahmda.ws/t6N5/c)
 
-### RELEASE: 1.0.0
+  <br>
 
-![NEW](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
+  {{#if href}}
+    ### RELEASE: [{{title}}]({{href}}){{#if tag}}{{/if}}
+  {{else}}
+    ### RELEASE: {{title}}{{#if tag}}{{/if}}
+  {{/if}}
 
-> 📦 First Commit [`755b044`](https://github.com/ahmadawais/gatsby-remark-better-embed-video/commit/755b044a823e6a8cf6c26ca2fde57f4806cb9b41) <br>
+  {{#commit-list commits heading='![NEW](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)' message='NEW: '}}
+    > {{subject}} [`{{shorthash}}`]({{href}}) <br>
+  {{/commit-list}}
 
-<br>
+  {{#commit-list commits heading='![IMPROVEMENT](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)' message='IMPROVE: '}}
+    > {{subject}} [`{{shorthash}}`]({{href}}) <br>
+  {{/commit-list}}
+
+  {{#commit-list commits heading='![FIX](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)' message='FIX: '}}
+    > {{subject}} [`{{shorthash}}`]({{href}}) <br>
+  {{/commit-list}}
+
+  {{#commit-list commits heading='![DOCS](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)' message='DOC:'}}
+   > {{subject}} [`{{shorthash}}`]({{href}}) <br>
+  {{/commit-list}}
+
+    <br>
+{{/each}}
+
 
 ## OLD CHANGELOG (before fork)
 
